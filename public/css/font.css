@@ -1,0 +1,12 @@
+@font-face {
+    font-family: customFont;
+    src: url(/fonts/Nunito-Regular.ttf);
+}
+
+body {
+    font-family: customFont !important;
+}
+
+.custom-font {
+    font-family: customFont;
+}
