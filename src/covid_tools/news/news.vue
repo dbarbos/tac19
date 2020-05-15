@@ -8,7 +8,7 @@
 				<v-col md="12">
 					<v-btn href="https://newsapi.org/" target="_blank" text>Powered by News API</v-btn>
 					<v-row>
-						<v-col md="4" v-for="n in noticias" :key="n.url">
+						<v-col cols="12" md="4" v-for="n in noticias" :key="n.url">
 							<v-card outlined hover :href="n.url" target="_blank" style="height:100%">
 								<v-list-item three-line>
 									<v-list-item-content>
@@ -33,7 +33,7 @@
 								</v-card-actions>-->
 							</v-card>
 						</v-col>
-						<v-col md="4">
+						<v-col cols="12" md="4">
 							<v-card outlined @click="getNews()" style="height:100%;min-height:200px" hover>
 								<v-row align="center" justify="center" style="height:100%">
 									<v-col md="12" class="text-center primary--text">
