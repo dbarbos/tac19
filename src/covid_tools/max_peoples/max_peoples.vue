@@ -152,6 +152,15 @@ export default {
 	margin-right: 10px !important;
 }
 
+.margin-only-left {
+  margin-left: 10px !important;
+}
+
+.margin-both-sides {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
 .big-text {
 	font-size: 200%;
 }

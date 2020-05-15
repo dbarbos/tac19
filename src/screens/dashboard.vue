@@ -1,7 +1,7 @@
 <template>
 	<div class="">
 		<v-row class="ma-4">
-			<v-col :md="tool.size" v-for="(tool,i) in covid_tools" :key="i">
+			<v-col  cols="12" :md="tool.size" v-for="(tool,i) in covid_tools" :key="i">
 				<v-card class="pa-4" color="transparent" @click="$router.push(tool.link)">
 					<div>
 						<img class="tool-img" :src="tool.img" />
