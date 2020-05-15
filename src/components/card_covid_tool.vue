@@ -4,7 +4,7 @@
 			<img class="tool-img" :src="tool.img" />
 			<div class="tool-background" :style="'background-color:'+tool.background_color"></div>
 
-			<div class="tool-content"> 
+			<div class="tool-content">
 				<div class="custom-font mb-4" style="font-size:25px">{{tool.name}}</div>
 				<div style="text-align:justify" class="mb-4">{{tool.desc}}</div>
 				<slot></slot>
@@ -22,7 +22,7 @@ export default {
 	computed: {
 		tool() {
 			for (var t of covid_tools) {
-				if ((t.id = this.tool_id)) return t;
+				if (t.id == this.tool_id) return t;
 			}
 			return null;
 		}

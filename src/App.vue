@@ -1,9 +1,10 @@
 <template>
 	<v-app>
-    <appbar></appbar>
+		<appbar></appbar>
 		<v-content class="custom-font">
 			<router-view></router-view>
 		</v-content>
+		<alerts ref="alerts" />
 	</v-app>
 </template>
 
@@ -11,7 +12,8 @@
 export default {
 	name: "APP",
 	components: {
-		appbar: () => import("./components/appbar")
+		appbar: () => import("./components/appbar"),
+		alerts: () => import("./components/alerts")
 	},
 
 	data: () => ({
