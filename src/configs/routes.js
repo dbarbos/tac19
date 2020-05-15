@@ -9,6 +9,11 @@ const routes = [{
         path: '/max-peoples',
         component: () =>
             import ("@/covid_tools/max_peoples/max_peoples")
+    },
+    {
+        path: '/news',
+        component: () =>
+            import ("@/covid_tools/news/news")
     }
     // { path: '/bar', component: Bar }
 ]
