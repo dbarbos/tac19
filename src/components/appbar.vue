@@ -1,6 +1,6 @@
 <template>
 	<div class="custom-font">
-		<v-app-bar app color="transparent" elevation="0">
+		<v-app-bar app color="white" elevation="3">
 			<ctext class="d-flex align-center" style="font-size:20px" color="primary">
 				<b>{{general.app_name}}</b>
 			</ctext>
