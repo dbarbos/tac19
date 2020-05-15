@@ -8,7 +8,7 @@
             v-model="largura"
             type="number"
             label="Largura da Sala (em metros)"
-            class="margin-side"
+            class="margin-only-right"
             filled
             @input="$v.largura.$touch()"
           ></v-text-field>
@@ -41,13 +41,13 @@
     </v-row>
 
     <v-row align="center" justify="center" v-if="!hide">
-      <v-icon x-large v-on:click="subCounter">remove</v-icon>
+      <v-icon class="margin-only-right" x-large v-on:click="subCounter">remove</v-icon>
 
-      <div>{{counter.toString()}}</div>
-      <div>/</div>
-      <div>{{max.toString()}}</div>
+      <div class="big-text margin-both-sides">{{counter.toString()}}</div>
+      <div class="big-text margin-both-sides">/</div>
+      <div class="big-text margin-both-sides">{{max.toString()}}</div>
 
-      <v-icon x-large v-on:click="addCounter">add</v-icon>
+      <v-icon class="margin-only-left" x-large v-on:click="addCounter">add</v-icon>
     </v-row>
   </v-container>
 </template>
@@ -104,8 +104,17 @@ export default {
   margin-bottom: 20px !important;
 }
 
-.margin-side {
+.margin-only-right {
   margin-right: 10px !important;
+}
+
+.margin-only-left {
+  margin-left: 10px !important;
+}
+
+.margin-both-sides {
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
 .big-text {
