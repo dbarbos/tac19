@@ -1,5 +1,5 @@
 export default [{
-        id: "max",
+        id: "max_peoples",
         name: "Máximo de pessoas",
         desc: "Calcule quantas pessoas são permitidas em um ambiente para manter uma distância segura e evitar a transmissão da Covid-19.",
         img: "https://image.freepik.com/free-vector/group-young-people-posing-photo_52683-18824.jpg",

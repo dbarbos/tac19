@@ -1,14 +1,14 @@
 <template>
-	<div class="">
+	<div >
 		<v-row class="ma-4">
-			<v-col  cols="12" :md="tool.size" v-for="(tool,i) in covid_tools" :key="i">
-				<v-card class="pa-4" color="transparent" @click="$router.push(tool.link)">
+			<v-col cols="12" :md="tool.size" v-for="(tool,i) in covid_tools" :key="i">
+				<v-card class="pa-4" color="transparent" @click="goToTool(tool)">
 					<div>
 						<img class="tool-img" :src="tool.img" />
 						<div class="tool-background" :style="'background-color:'+tool.background_color"></div>
 
 						<div class="tool-content">
-							<div class="custom-font mb-4 " style="font-size:25px">{{tool.name}}</div>
+							<div class="custom-font mb-4" style="font-size:25px">{{tool.name}}</div>
 							<div style="text-align:justify">{{tool.desc}}</div>
 						</div>
 					</div>
@@ -25,6 +25,11 @@ export default {
 		return {
 			covid_tools
 		};
+	},
+	methods: {
+		goToTool(tool) {
+			this.$router.push(tool.link);
+		}
 	}
 };
 </script>

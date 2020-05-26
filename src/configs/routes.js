@@ -1,22 +1,22 @@
 import VueRouter from 'vue-router';
-
+import general from './general';
+import covid_tools from './covid_tools';
 
 const routes = [{
-        path: '/',
+    path: '/',
+    name: general.app_name,
+    component: () =>
+        import ("@/screens/dashboard")
+}]
+
+covid_tools.forEach(tool => {
+    routes.push({
+        path: tool.link,
+        name: tool.name,
         component: () =>
-            import ("@/screens/dashboard")
-    }, {
-        path: '/max-peoples',
-        component: () =>
-            import ("@/covid_tools/max_peoples/max_peoples")
-    },
-    {
-        path: '/news',
-        component: () =>
-            import ("@/covid_tools/news/news")
-    }
-    // { path: '/bar', component: Bar }
-]
+            import ("@/covid_tools/" + tool.id + "/" + tool.id)
+    })
+});
 
 
 const router = new VueRouter({

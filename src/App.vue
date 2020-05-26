@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<appbar></appbar>
+		<appbar :title="title" :back="back"></appbar>
 		<v-content class="custom-font">
 			<router-view></router-view>
 		</v-content>
@@ -17,7 +17,15 @@ export default {
 	},
 
 	data: () => ({
-		//
-	})
+		title: "",
+		back: false
+	}),
+	mounted() {
+		this.$router.afterEach(() => {
+			this.title = this.$router.currentRoute.name;
+			this.back = this.$router.currentRoute.path == "/" ? false : true;
+		});
+		console.log(this.$router.currentRoute);
+	}
 };
 </script>

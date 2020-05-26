@@ -1,9 +1,10 @@
 <template>
+	
 	<v-container fill-height fluid>
 		<v-row v-if="hide" style="height:100%">
 			<v-col cols="12" md="3">
 				<card-covid-tool
-					tool_id="max"
+					tool_id="max_peoples"
 					style="min-height:100%"
 				>O permitido é 1 pessoa a cada 3,5 metros quadrados</card-covid-tool>
 			</v-col>
@@ -21,7 +22,7 @@
 					<v-text-field
 						v-model="altura"
 						type="number"
-						label="Altura da Sala (em metros)"
+						label="Comprimento da Sala (em metros)"
 						filled
 						@input="$v.altura.$touch()"
 					></v-text-field>

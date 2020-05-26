@@ -22,6 +22,9 @@ new Vue({
         }
     },
     methods: {
+        app() {
+            return this.$children[0];
+        },
         alerts() {
             return this.$children[0].$refs.alerts;
         }
