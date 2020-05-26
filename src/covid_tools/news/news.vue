@@ -13,17 +13,11 @@
 								<v-list-item three-line>
 									<v-list-item-content>
 										<div class="overline mb-4">{{n.source.name}}</div>
-										<v-img
-											:src="n.urlToImage"
-											aspect-ratio="3"
-											max-height="300px"
-											max-width="100%"
-											class="margin-bottom"
-										></v-img>
+										<img :src="n.urlToImage" style="height:150px;width:100%;object-fit:cover" />
 										<v-list-item-title class="headline mb-1">{{n.title}}</v-list-item-title>
 										<v-list-item-subtitle>
 											<div class="mb-2">{{$root.DateHelper.formatApiDate(n.publishedAt)}}</div>
-											{{ n.description }}
+											<div v-html="n.description"></div>
 										</v-list-item-subtitle>
 									</v-list-item-content>
 								</v-list-item>
