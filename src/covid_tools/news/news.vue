@@ -2,10 +2,10 @@
 	<div>
 		<v-container grid-list-xs>
 			<v-row>
-				<v-col md="12">
+				<v-col cols="12" md="12">
 					<card-covid-tool tool_id="news" style="min-height:100%"></card-covid-tool>
 				</v-col>
-				<v-col md="12">
+				<v-col cols="12" md="12">
 					<v-btn href="https://newsapi.org/" target="_blank" text>Powered by News API</v-btn>
 					<v-row>
 						<v-col cols="12" md="4" v-for="n in noticias" :key="n.url">
