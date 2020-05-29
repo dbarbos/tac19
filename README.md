@@ -9,7 +9,7 @@ Estamos desenvolvendo um portal com ferramentas relacionadas ao COVID-19 e que p
 
 Apesar da T-Systems do Brasil ser uma empresa privada, esta iniciativa foi criada por uma de suas equipes e pretende utilizar a infraestrutura e algumas facilidades que uma empresa deste porte possa suportar, mas ao final de tudo, somos nós, desenvolvedores, que iremos trabalhar e investir o nosso esforço para o bem maior.
 
-Agradecemos a todos que queiram participar deste projeto e esperamos que, ao fim deste período conturbado, possamos sair mais fortes e unidos do que nunca.
+Agradecemos a todos que queiram participar deste projeto e esperamos que, ao fim deste período conturbado, possamos estar mais fortes e unidos do que nunca.
 
 ## Quem somos
 Nós somos da equipe de desenvolvimento de aplicativos da [T-Systems do Brasil](http://t-systems.com.br).
@@ -30,7 +30,7 @@ Este projeto segue as diretrizes apontadas pelo código de conduta do [Contribut
 
 ## Linguagem do Projeto
 
-Neste momento estamos desenvolvendo ferramentas para serem utilizadas no Brasil, portanto, a linguagem oficial poderá ser esta. Porém, nada impede que suas ferramentas sejam desenvolvidas com opção de multilinguagem. 
+Neste momento estamos desenvolvendo ferramentas para serem utilizadas no Brasil, portanto, a linguagem oficial deverá ser esta. Porém, nada impede que suas ferramentas sejam desenvolvidas com opção de multilinguagem. 
 
 ## Licença
 
